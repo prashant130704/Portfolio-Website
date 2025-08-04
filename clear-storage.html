@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Portfolio Storage</title>
+</head>
+<body>
+    <h1>Clearing Portfolio Storage...</h1>
+    <p id="status">Processing...</p>
+    
+    <script>
+        // Clear all localStorage
+        localStorage.clear();
+        
+        // Also clear sessionStorage just in case
+        sessionStorage.clear();
+        
+        // Update status
+        document.getElementById('status').innerHTML = 'Storage cleared! You can now <a href="index.html">go back to your portfolio</a> - it should open in light mode.';
+        
+        console.log('All storage cleared!');
+    </script>
+</body>
+</html>

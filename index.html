@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant Shekhar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Prashant Shekhar</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <span class="nav-text">About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">
+                        <span class="nav-text">Certifications</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        <span class="nav-text">Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <span class="nav-text">Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particlesCanvas" class="particles-canvas"></canvas>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Prashant Shekhar</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Very Enthusiast Learner</h2>
+                    <p class="hero-description">
+                        I create beautiful, responsive web applications using modern technologies. 
+                        Passionate about clean code, user experience, and bringing ideas to life through code.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/mypic.jpg" alt="Prashant Shekhar" class="profile-img" height="300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my background and journey</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Hello! I'm Prashant Shekhar</h3>
+                        <p>
+                            I'm a passionate CSE student with about a year of practice in creating digital experiences 
+                            that make a difference. My journey began with a curiosity about how programming works , how ai is run , how 
+                            websites work, and it has evolved into a love for crafting efficient, scalable, and beautiful web applications and other projects.
+                        </p>
+                        <p>
+                            I specialize in full-stack development,Data analytics, DBMS with expertise in modern frameworks like React, 
+                            Node.js, PowerBI, Excel, MongoDb and SQL. I believe in writing clean, maintainable code and staying up-to-date 
+                            with the latest industry trends and best practices.
+                        </p>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                            <div class="detail-content">
+                                <div class="education-item">
+                                    <h5>Bachelor of Technology in Computer Science and Engineering</h5>
+                                    <p>Noida Institute of Engineering and Technology | 2023-2027</p>
+                                    <p>Will graduate soon with a focus on software engineering and web technologies.</p>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional certifications and achievements</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">Microsoft Azure Fundamentals</h3>
+                            <p class="cert-issuer">Microsoft</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2024</span>
+                        <button class="cert-view" data-cert="azure">View</button>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">Python Programming Fundamentals</h3>
+                            <p class="cert-issuer">Infosys Springboard</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2023</span>
+                        <button class="cert-view" data-cert="python">View</button>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">Programming in C</h3>
+                            <p class="cert-issuer">Infosys Springboard</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2024</span>
+                        <button class="cert-view" data-cert="c-programming">View</button>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">DSA Using JAVA</h3>
+                            <p class="cert-issuer">Infosys Springboard</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2025</span>
+                        <button class="cert-view" data-cert="dsa">View</button>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">DSA Using Python-Part1</h3>
+                            <p class="cert-issuer">Infosys Springboard</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2024</span>
+                        <button class="cert-view" data-cert="dsa-python1">View</button>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">DSA Using Python-Part2</h3>
+                            <p class="cert-issuer">Infosys Springboard</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2025</span>
+                        <button class="cert-view" data-cert="dsa-python2">View</button>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">Oracle Database</h3>
+                            <p class="cert-issuer">Oracle</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2025</span>
+                        <button class="cert-view" data-cert="oracle">View</button>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">OOPS Using Python</h3>
+                            <p class="cert-issuer">Infosys Springboard</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2024</span>
+                        <button class="cert-view" data-cert="oops-python">View</button>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">Next Gen Technology</h3>
+                            <p class="cert-issuer">Infosys Springboard</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2024</span>
+                        <button class="cert-view" data-cert="next-gen">View</button>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">Design Thinking</h3>
+                            <p class="cert-issuer">Coursera</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2024</span>
+                        <button class="cert-view" data-cert="design-thinking">View</button>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="cert-main">
+                            <h3 class="cert-title">Web Development</h3>
+                            <p class="cert-issuer">ProdigyInfotech</p>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-date">2024</span>
+                        <button class="cert-view" data-cert="web-dev">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>JavaFX</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Oracle</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Command Line</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Full Stack Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/stopwatch.jpg" alt="Stopwatch website">
+                    </div>
+                    <div class="project-content">
+                        <h3>Stopwatch Web Application</h3>
+                        <p>Full-stack stopwatch application built with HTML, CSS, and JavaScript. Features include starting, pausing, resetting and displaying time lapses.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/prashant130704/stopwatch_web_app" class="btn btn-small" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/tictactoe.jpg" alt="Tic-Tac-Toe Web Game">
+                    </div>
+                    <div class="project-content">
+                        <h3>Tic-Tac-Toe Web Application</h3>
+                        <p>A fun tic-tac-toe game with interactive and engaging interface with various functionalities.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/prashant130704/tic_tac_toe" target="_blank" class="btn btn-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/weather.jpg" alt="Weather Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Web App</h3>
+                        <p>Responsive weather application with location-based forecasts, current location , and detailed weather analytics.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                            <span>Weather API</span>
+                            <span>HTML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/prashant130704/weather_web_app" target="_blank" class="btn btn-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>prashantshekhar2004@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7458070922</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India, In</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/prashant130704" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/prashant-shekhar-898371298" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/prashant_shekhar13?igsh=MW96ZnNna3lwbzl4Nw==" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Prashant Shekhar. All rights reserved.</p>
+                <p>Built with ❤️ and lots of sleepless nights</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Dark/Light Mode Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
